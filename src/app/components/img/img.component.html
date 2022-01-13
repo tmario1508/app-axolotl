@@ -1,0 +1,4 @@
+<img class="imgParent" [src]="img" *ngIf="img; else elseImg" alt="">
+<ng-template #elseImg>
+    <img class="imgParent" [src]="imgDefault" alt="">
+</ng-template>
